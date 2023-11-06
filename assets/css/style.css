@@ -116,7 +116,7 @@ main {
     z-index: 5;
 }
 
-.card-text {
+.card-project .card-text {
     margin-top: 5%;
     margin-left: 5%;
     display:none;
@@ -124,4 +124,9 @@ main {
 
 .card-project:hover .card-text {
     display:block;
+}
+
+#about-me img{
+    border-radius: 8% 8%;
+
 }
