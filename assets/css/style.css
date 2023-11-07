@@ -101,7 +101,7 @@ main {
     border-style: solid;
     border-color: var(--dark);
     border-width: 5px;
-    height: 15%;
+    line-height: 150%;
     
 }
 
@@ -122,6 +122,7 @@ main {
 .card-project:hover .card-text {
     display:block;
 }
+
 #about-me div{
 display: flex;
 justify-content: space-around;
@@ -129,5 +130,5 @@ justify-content: space-around;
 
 #about-me img{
     width: 50%;
-
+    min-width: 100px;
 }
