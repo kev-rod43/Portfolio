@@ -27,6 +27,15 @@ header {
     align-items: center;
 }
 
+header h1 {
+    font-size: 60px;
+    line-height: 43%;
+    margin-top: 1%;
+    text-shadow: -1px -1px 0 var(--dark), 1px -1px 0 var(--dark), -1px 1px 0 var(--dark), 1px 1px 0 var(--dark);
+    text-decoration: underline var(--dark);
+    text-decoration-thickness: 1px;
+}
+
 nav {
     color: var(--light);
     width: 33%;
@@ -53,12 +62,12 @@ main {
 h2 {
     width:100%;
     text-align: left;
-    -webkit-text-stroke: 3px var(--dark);
     font-weight: bolder;
     font-size: 55px;
-    color: var(--lightest);
+    color: var(--dark);
     border-bottom: 3px solid var(--dark);
     display:block;
+    text-shadow: -1px -1px 0 var(--light), 1px -1px 0 var(--light), -1px 1px 0 var(--light), 1px 1px 0 var(--light);
 }
 
 #about-me {
