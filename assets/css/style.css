@@ -7,6 +7,7 @@
 }
 
 :root {
+    --lightest: #f0cffa;
     --light: #efbbff; 
     --mediumlight:	#d896ff;
     --medium: #be29ec;
@@ -26,6 +27,16 @@ header {
     align-items: center;
 }
 
+header h1 {
+    font-size: 60px;
+    line-height: 43%;
+    margin-top: 1%;
+    text-shadow: -1px -1px 0 var(--dark), 1px -1px 0 var(--dark), -1px 1px 0 var(--dark), 1px 1px 0 var(--dark);
+    text-decoration: underline var(--dark);
+    text-decoration-thickness: 1px;
+    color: var(--lightest)
+}
+
 nav {
     color: var(--light);
     width: 33%;
@@ -39,14 +50,25 @@ nav ul {
 }
 
 nav ul li {
-    margin-left:10%;
+    margin-left:5%;
     list-style-type: none;
-    width:23%
+    width:28%
 }
 
 main {
     display: flex;
     flex-direction: column;
+}
+/* Styles Section Headers*/
+h2 {
+    width:100%;
+    text-align: left;
+    font-weight: bolder;
+    font-size: 55px;
+    color: var(--dark);
+    border-bottom: 3px solid var(--dark);
+    display:block;
+    text-shadow: -1px -1px 0 var(--light), 1px -1px 0 var(--light), -1px 1px 0 var(--light), 1px 1px 0 var(--light);
 }
 
 #about-me {
@@ -62,11 +84,6 @@ main {
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top:5%;
-}
-
-#projects h2 {
-    width:100%;
-    text-align: center;
 }
 
 #contact-me {
@@ -101,7 +118,7 @@ main {
     border-style: solid;
     border-color: var(--dark);
     border-width: 5px;
-    height: 15%;
+    line-height: 150%;
     
 }
 
@@ -123,7 +140,12 @@ main {
     display:block;
 }
 
-#about-me img{
-    border-radius: 8% 8%;
+#about-me div{
+display: flex;
+justify-content: space-around;
+}
 
+#about-me img{
+    width: 50%;
+    min-width: 100px;
 }
