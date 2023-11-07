@@ -83,17 +83,14 @@ main {
     margin-left: 3%;
     margin-right: 3%;
     margin-top: 3%;
-    border-style: solid;
-    border-color: var(--dark);
-    border-width: 5px;
+    border-image: linear-gradient(to top right, rgb(102, 0, 102)50%, rgb(216, 150, 255)75%) 1;
+    border-image-width: 5px;
     position: relative;
+    background-image:linear-gradient(to top right, rgb(128, 0, 128), rgb(216, 150, 255)75%);
 }
 
 #project-main {
     width: 94%;
-    border-style: solid;
-    border-color: var(--dark);
-    border-width: 5px;
 }
 
 .project-title {
