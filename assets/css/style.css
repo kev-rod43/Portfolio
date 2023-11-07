@@ -39,9 +39,9 @@ nav ul {
 }
 
 nav ul li {
-    margin-left:10%;
+    margin-left:5%;
     list-style-type: none;
-    width:23%
+    width:28%
 }
 
 main {
@@ -122,8 +122,12 @@ main {
 .card-project:hover .card-text {
     display:block;
 }
+#about-me div{
+display: flex;
+justify-content: space-around;
+}
 
 #about-me img{
-    border-radius: 8% 8%;
+    width: 50%;
 
 }
