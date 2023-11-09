@@ -45,7 +45,7 @@ header h1 {
 nav {
     color: var(--light);
     width: 33%;
-    
+
 }
 
 nav ul {
@@ -57,7 +57,7 @@ nav ul {
 nav ul li {
     margin-left:5%;
     list-style-type: none;
-    width:28%
+    width:28%;
 }
 
 main {
