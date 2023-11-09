@@ -7,13 +7,18 @@
 }
 
 :root {
-    --lightest: #f0cffa;
-    --light: #efbbff; 
+    --lightest: #f1dcf8;
+    --light: #f4cfff; 
     --mediumlight:	#d896ff;
     --medium: #be29ec;
     --mediumdark: #800080;
     --dark: #660066;
+    --darkest: #660066;
    }
+   
+p {
+    font-size: 150%;
+}
 
 body {
     background-color: var(--mediumlight);
@@ -58,6 +63,7 @@ nav ul li {
 main {
     display: flex;
     flex-direction: column;
+
 }
 /* Styles Section Headers*/
 h2 {
@@ -75,6 +81,28 @@ h2 {
     display: flex;
     align-items: center;
     margin-top: 5%;
+    position:relative;
+}
+
+#about-me p {
+    margin-right: 8%;
+    margin-left: 8%;
+    line-height: 150%;
+    color: var(--darkest);
+    font-weight: 700;
+    background-color: var(--mediumlight);
+    padding: 2%;
+    border:solid;
+    border-color: var(--darkest);
+}
+
+#about-me-banner {
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    background-color: var(--light);
+    z-index: -1;
+    
 }
 
 #projects {
@@ -119,6 +147,7 @@ h2 {
     border-color: var(--dark);
     border-width: 5px;
     line-height: 150%;
+    color: var(--lightest);
     
 }
 
@@ -146,6 +175,5 @@ justify-content: space-around;
 }
 
 #about-me img{
-    width: 50%;
-    min-width: 100px;
+    width: 70%;
 }
