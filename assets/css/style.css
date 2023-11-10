@@ -143,6 +143,15 @@ h2 {
     background-image:linear-gradient(to top right, rgb(128, 0, 128), rgb(216, 150, 255)75%);
 }
 
+.project-img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 25%;
+    transition: 1s;
+}
+
 .card-project p {
     color: var(--darkest);
 }
@@ -162,7 +171,14 @@ h2 {
     border-width: 5px;
     line-height: 150%;
     color: var(--lightest);
-    
+    font-size: 150%;    
+}
+
+.project-title span {
+    font-size: 60%;
+    margin-left: 5%;
+    font-style:italic;
+    font-weight:lighter
 }
 
 .project-link {
@@ -176,17 +192,15 @@ h2 {
 .card-project .card-text {
     margin-top: 5%;
     margin-left: 5%;
+    margin-right: 1%;
     display:none;
+    line-height: 180%;
 }
 
 #project-main .card-text{
     margin-top: 3%;
     margin-left: 3%;
     margin-right: 1%;
-}
-
-.card-project:hover .card-text {
-    display:block;
 }
 
 #contact-me-methods {
@@ -208,4 +222,12 @@ h2 {
 
 .contact-method a img {
     width: 10%;
+}
+
+.card-project:hover .card-text {
+    display:block;
+}
+
+.card-project:hover .project-img {
+    opacity: 0;
 }
