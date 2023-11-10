@@ -132,7 +132,7 @@ h2 {
 
 .card-project {
     width: 44%;
-    min-height: 300px;
+    height: 300px;
     display: block;
     margin-left: 3%;
     margin-right: 3%;
@@ -172,6 +172,7 @@ h2 {
     line-height: 150%;
     color: var(--lightest);
     font-size: 150%;    
+    float:left;
 }
 
 .project-title span {
@@ -231,3 +232,54 @@ h2 {
 .card-project:hover .project-img {
     opacity: 0;
 }
+
+@media screen and (max-width: 1300px) {
+    #about-me{
+        flex-direction: column;
+    }
+    
+    #about-me-banner {
+        width:0%;
+        height:0%;
+    }
+    .project-title {
+        line-height: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .card-project {
+        width: 64%;
+        margin-left:3%;
+        margin-right:33%;
+    }
+
+    #project-main {
+        width:94%;
+        margin-left:0;
+        margin-right:0;
+
+    }
+    .project-title {
+        line-height: 90%;
+    }
+    .card-project:hover .project-title {
+        display:none;
+    }
+
+}
+@media screen and (max-width: 660px) {
+    header h1 {
+        font-size:40px;
+    }
+    h2 {
+        font-size:35px;
+    }    
+
+}
+@media screen and (max-width: 440px) {
+    header h1 {
+       font-size:30px;
+    }   
+   }
