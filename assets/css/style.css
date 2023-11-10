@@ -275,11 +275,17 @@ h2 {
     }
     h2 {
         font-size:35px;
-    }    
+    } 
+    .contact-method {
+        font-size: 90%;
+    }      
 
 }
 @media screen and (max-width: 440px) {
     header h1 {
        font-size:30px;
+    }
+    .contact-method {
+        font-size: 60%;
     }   
    }
